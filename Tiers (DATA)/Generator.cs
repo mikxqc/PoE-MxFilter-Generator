@@ -47,6 +47,7 @@ namespace Tiers__DATA_
             File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetBorderColor 0 0 0" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetFontSize 35" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
 
             File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
@@ -57,6 +58,7 @@ namespace Tiers__DATA_
             File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetBorderColor 210 0 0" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetFontSize 35" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
 
             File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
@@ -68,6 +70,7 @@ namespace Tiers__DATA_
             File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetBorderColor 184 218 242" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetFontSize 40" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
 
             File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
@@ -79,6 +82,7 @@ namespace Tiers__DATA_
             File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetBorderColor 222 118 0" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetFontSize 40" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
 
             File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
@@ -90,6 +94,7 @@ namespace Tiers__DATA_
             File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetBorderColor 222 118 0" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetFontSize 40" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
         }
     }
 }
