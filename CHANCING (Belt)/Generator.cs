@@ -84,7 +84,7 @@ namespace PoE_MxFilterGen
                 }
             }
 
-            if (iB == null) { iB = @""""""; }
+            if (iB == null) { iB = @" """""; }
             string fn = @"gen\" + section + ".filter";
             File.AppendAllText(fn, string.Format("# Section: {0}", section) + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
