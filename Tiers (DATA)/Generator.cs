@@ -41,6 +41,45 @@ namespace Tiers__DATA_
             File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, $"    BaseType {js}" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    HasExplicitMod ""Veiled""" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    Rarity = Rare" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetTextColor 255 215 0" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetBorderColor 112 255 112 255" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetFontSize 40" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    MinimapIcon 1 Green Star" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    PlayEffect Green" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
+
+            File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, $"    BaseType {js}" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    FracturedItem True" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    Rarity = Rare" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetTextColor 255 215 0" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetBorderColor 112 255 112 255" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetFontSize 40" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    MinimapIcon 1 Green Star" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    PlayEffect Green" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
+
+            File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, $"    BaseType {js}" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SynthesisedItem True" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    Rarity = Rare" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetTextColor 255 215 0" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetBackgroundColor 54 54 54" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetBorderColor 112 255 112 255" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    SetFontSize 40" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    MinimapIcon 1 Green Star" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    PlayEffect Green" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_tier.mp3""" + Environment.NewLine, Encoding.UTF8);
+
+            File.AppendAllText(fn, "" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "Show" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, $"    BaseType {js}" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    Identified True" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    Rarity = Rare" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetTextColor 255 215 0" + Environment.NewLine, Encoding.UTF8);
