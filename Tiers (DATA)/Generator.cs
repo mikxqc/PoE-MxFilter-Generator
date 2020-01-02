@@ -30,7 +30,7 @@ namespace Tiers__DATA_
             public string tiers { get; set; }
         }
 
-        public static void Gen(string section, string api, string league, int minValue, int chanceMinValue, int confidence)
+        public static void Gen(string section, string api, string league, int minValue)
         {
             string giturl = settings.GetGIT();
             var js = Web.ReadString($@"{giturl}/PoE-MxFilter-Structure/master/Tiers.txt");

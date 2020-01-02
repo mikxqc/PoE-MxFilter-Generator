@@ -83,8 +83,8 @@ namespace PoE_MxFilterGen
             File.AppendAllText(fn, "    SetBackgroundColor 255 255 255" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetBorderColor 180 96 0" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    SetFontSize 45" + Environment.NewLine, Encoding.UTF8);
-            File.AppendAllText(fn, @"    CustomAlertSound ""mx_chase.mp3""", Encoding.UTF8);
-            File.AppendAllText(fn, "    MinimapIcon 0 White Star", Encoding.UTF8);
+            File.AppendAllText(fn, @"    CustomAlertSound ""mx_chase.mp3""" + Environment.NewLine, Encoding.UTF8);
+            File.AppendAllText(fn, "    MinimapIcon 0 White Star" + Environment.NewLine, Encoding.UTF8);
             File.AppendAllText(fn, "    PlayEffect White", Encoding.UTF8);
         }
     }

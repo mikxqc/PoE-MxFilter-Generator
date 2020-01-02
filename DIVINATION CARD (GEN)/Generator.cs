@@ -8,69 +8,49 @@ using System.Threading.Tasks;
 
 namespace PoE_MxFilterGen
 {
-    public class SparklineCard
-    {
-        public List<double?> data { get; set; }
-        public double? totalChange { get; set; }
-    }
-
-    public class ExplicitModifierCard
-    {
-        public string text { get; set; }
-        public bool optional { get; set; }
-    }
-
-    public class LineCard
+    public class RootCard
     {
         public int id { get; set; }
         public string name { get; set; }
-        public string icon { get; set; }
-        public int mapTier { get; set; }
-        public int levelRequired { get; set; }
-        public string baseType { get; set; }
+        public string category { get; set; }
+        public string group { get; set; }
+        public int frame { get; set; }
+        public List<object> influences { get; set; }
         public int stackSize { get; set; }
-        public object variant { get; set; }
-        public object prophecyText { get; set; }
-        public string artFilename { get; set; }
-        public int links { get; set; }
-        public int itemClass { get; set; }
-        public SparklineCard sparkline { get; set; }
-        public List<object> implicitModifiers { get; set; }
-        public List<ExplicitModifierCard> explicitModifiers { get; set; }
-        public string flavourText { get; set; }
-        public string itemType { get; set; }
-        public double chaosValue { get; set; }
-        public double exaltedValue { get; set; }
-        public int count { get; set; }
+        public string icon { get; set; }
+        public double mean { get; set; }
+        public double median { get; set; }
+        public double mode { get; set; }
+        public double min { get; set; }
+        public double max { get; set; }
+        public double exalted { get; set; }
+        public int total { get; set; }
+        public int daily { get; set; }
+        public int current { get; set; }
+        public int accepted { get; set; }
+        public double change { get; set; }
+        public List<double> history { get; set; }
     }
 
-    public class RootCard
-    {
-        public List<LineCard> lines { get; set; }
-    }
-
-    class Generator
+        class Generator
     {
         private static string iB;
 
-        public static void Gen(string section, string api, string league, int minValue, int chanceMinValue, int confidence)
+        public static void Gen(string section, string api, string league, int minValue)
         {
             List<string> itemBase = new List<string>();
-            RootCard j = JsonConvert.DeserializeObject<RootCard>(File.ReadAllText("data/ninja.card.json", Encoding.UTF8));
 
-            foreach (var ln in j.lines)
+            var RootCard = JsonConvert.DeserializeObject<List<RootCard>>(File.ReadAllText("data/poew.card.json", Encoding.UTF8));
+
+            foreach (var ln in RootCard)
             {
-                // Check if the item count is at least equal to the desired confidence level
-                if (ln.count >= confidence)
+                // Check if the item value is equal or superior to the minimum value
+                if (ln.min >= 10)
                 {
-                    // Check if the item value is equal or superior to the minimum value
-                    if (ln.chaosValue >= 5)
+                    if (!itemBase.Contains(ln.name))
                     {
-                        if (!itemBase.Contains(ln.name))
-                        {
-                            itemBase.Add(ln.name);
-                            iB = iB + string.Format(@" ""{0}""", ln.name);
-                        }
+                        itemBase.Add(ln.name);
+                        iB = iB + string.Format(@" ""{0}""", ln.name);
                     }
                 }
             }
