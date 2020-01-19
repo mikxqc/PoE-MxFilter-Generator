@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EXPENSIVE UNIQUE (GEN) (Acc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiers (DATA)", "Tiers (DATA)\Tiers (DATA).csproj", "{428B5A68-922A-4651-88FC-A6C194C10BD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FOSSIL (GEN)", "FOSSIL (GEN)\FOSSIL (GEN).csproj", "{CE0E31E0-BE67-4CDB-8873-B959EDAD733C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{428B5A68-922A-4651-88FC-A6C194C10BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{428B5A68-922A-4651-88FC-A6C194C10BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{428B5A68-922A-4651-88FC-A6C194C10BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE0E31E0-BE67-4CDB-8873-B959EDAD733C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0E31E0-BE67-4CDB-8873-B959EDAD733C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0E31E0-BE67-4CDB-8873-B959EDAD733C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0E31E0-BE67-4CDB-8873-B959EDAD733C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
